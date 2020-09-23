@@ -1,38 +1,52 @@
 import React from "react";
 import "../styles/loginStyles.css";
+import { Link } from "react-router-dom";
 import Button from "../components/Botones";
 
 class signUp extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container mt-5 p-3">
         <form>
           <div className="form-group">
-            <label for="exampleInputText1">Nombre</label>
-            <input type="text" class="form-control" id="exampleInputText1" />
-
-            <label for="exampleInputEmail1">Correo Electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" />
-            <small id="emailHelp" class="form-text text-muted">
-              No compartiremos tu correo con nadie
-            </small>
-
-            <label for="exampleInputPassword1">Contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-
-            <label for="exampleInputPassword1">Confirmar Contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
+            <label for="InputName" className="text-white texto-label">
+              Nombre
+            </label>
+            <input type="text" className="form-control" id="InputName" />
           </div>
+          <div className="form-group">
+            <label for="InputEmail" className="text-white texto-label">
+              Correo Electronico
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="InputEmail"
+              aria-describedby="emailHelp"
+            />
+            <small id="emailHelp" class="form-text text-white text-center">
+              No compartiremmos tu correo electronico con nadie.
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="InputPassword" className="text-white texto-label">
+              Contraseña
+            </label>
+            <input type="password" class="form-control" id="InputPassword" />
+          </div>
+          <div class="form-group">
+            <label for="InputPasswordCon" className="text-white texto-label">
+              Confirmar Contraseña
+            </label>
+            <input type="password" class="form-control" id="InputPasswordCon" />
+          </div>
+          <Link to="/Login">
+            <Button texto={"Registrarse"} />
+          </Link>
+          <Link to="/Login">
+            <Button texto={"Inciar sesión"} />
+          </Link>
         </form>
-        <Button texto={"Registrarse"} />
       </div>
     );
   }

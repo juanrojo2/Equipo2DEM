@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/loginStyles.css";
 import Button from "../components/Botones";
 
 class Inicio extends React.Component {
   render() {
     return (
-      <div>
-        <div className="container-fluid align-self-center">
-          <div className="row">
-            <div className="col p-5 m-5">
-              <h1 className="tittle">Bokla</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h1 className="text-center title mt-5">Bokla</h1>
+            <Link to="/Login">
               <Button texto={"Iniciar sesión"} />
+            </Link>
+            <Link to="/singUp">
               <Button texto={"Registrarse"} />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
