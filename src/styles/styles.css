@@ -1,0 +1,13 @@
+body {
+  font-family: "Secular One", sans-serif;
+}
+.title {
+  font-family: "Lobster", cursive;
+  font-size: 110px;
+  color: black;
+}
+.texto-label {
+  font-family: "Secular One", sans-serif;
+  display: block;
+  font-size: 30px;
+}

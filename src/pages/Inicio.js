@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/loginStyles.css";
+import "../styles/styles.css";
 import Button from "../components/Botones";
 
 class Inicio extends React.Component {

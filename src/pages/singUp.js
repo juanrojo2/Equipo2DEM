@@ -1,21 +1,22 @@
 import React from "react";
-import "../styles/loginStyles.css";
+import "../styles/styles.css";
 import { Link } from "react-router-dom";
 import Button from "../components/Botones";
 
 class signUp extends React.Component {
   render() {
     return (
-      <div className="container mt-5 p-3">
+      <div className="container mt-4 p-3">
+        <h1>Registrarse</h1>
         <form>
           <div className="form-group">
-            <label for="InputName" className="text-white texto-label">
+            <label for="InputName" className="texto-label">
               Nombre
             </label>
             <input type="text" className="form-control" id="InputName" />
           </div>
           <div className="form-group">
-            <label for="InputEmail" className="text-white texto-label">
+            <label for="InputEmail" className="texto-label">
               Correo Electronico
             </label>
             <input
@@ -24,18 +25,18 @@ class signUp extends React.Component {
               id="InputEmail"
               aria-describedby="emailHelp"
             />
-            <small id="emailHelp" class="form-text text-white text-center">
+            <small id="emailHelp" class="form-texttext-center">
               No compartiremmos tu correo electronico con nadie.
             </small>
           </div>
           <div class="form-group">
-            <label for="InputPassword" className="text-white texto-label">
+            <label for="InputPassword" className="texto-label">
               Contraseña
             </label>
             <input type="password" class="form-control" id="InputPassword" />
           </div>
           <div class="form-group">
-            <label for="InputPasswordCon" className="text-white texto-label">
+            <label for="InputPasswordCon" className="texto-label">
               Confirmar Contraseña
             </label>
             <input type="password" class="form-control" id="InputPasswordCon" />
