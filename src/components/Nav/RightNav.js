@@ -8,7 +8,13 @@ const UL = styled.ul`
   li {
     padding: 15px 10px;
   }
-  @media (max-width: 900px) {
+  a {
+    color: rgba(0, 0, 0);
+  }
+  input {
+    margin: 8px 10px 0px 10px;
+  }
+  @media (max-width: 1100px) {
     flex-flow: column nowrap;
     background-color: whitesmoke;
     position: fixed;
@@ -19,7 +25,8 @@ const UL = styled.ul`
     width: 250px;
     padding-top: 4rem;
     transition: transform 0.3s ease-in-out;
-    li {
+    li,
+    a {
       color: rgba(0, 0, 0, 0.7);
     }
   }
@@ -35,19 +42,29 @@ const RightNav = ({ open }) => {
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <button class="btn btn-outline-success my-2 my-sm-0 mt-5" type="submit">
           Search
         </button>
       </form>
       <li></li>
       <li>Nombre de usuario</li>
       <hr />
-      <li>Tus libros</li>
-      <li>Tus notas</li>
-      <li>Tus comentarios</li>
-      <li>Cargar Libros</li>
+      <li>
+        <a href="/PagPrincipal">Tus Libros </a>
+      </li>
+      <li>
+        <a href="/PagNotas">Tus Notas</a>
+      </li>
+      <li>
+        <a href="/PagComentarios">Tus Comentarios </a>
+      </li>
+      <li>
+        <a href="/PagCargar">Cargar Libros </a>
+      </li>
       <hr />
-      <li>Cerrar Sesión</li>
+      <li>
+        <a href="/Login">Cerrar Sesión </a>
+      </li>
     </UL>
   );
 };
