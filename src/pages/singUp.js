@@ -6,48 +6,56 @@ import Button from "../components/Botones";
 class signUp extends React.Component {
   render() {
     return (
-      <div className="container mt-4 p-3">
+      <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+          <div class="modal-content">
         <h1>Registrarse</h1>
-        <form>
+        <br/>
+        <form class="col-12">
           <div className="form-group">
-            <label for="InputName" className="texto-label">
-              Nombre
-            </label>
-            <input type="text" className="form-control" id="InputName" />
+            
+            <input 
+            type="text" 
+            className="form-control" 
+            placeholder="Nombre"
+            id="InputName" />
           </div>
           <div className="form-group">
-            <label for="InputEmail" className="texto-label">
-              Correo Electronico
-            </label>
+            
             <input
               type="email"
               className="form-control"
               id="InputEmail"
+              placeholder="Correo Electronico"
               aria-describedby="emailHelp"
             />
-            <small id="emailHelp" class="form-texttext-center">
-              No compartiremmos tu correo electronico con nadie.
-            </small>
+            
           </div>
           <div class="form-group">
-            <label for="InputPassword" className="texto-label">
-              Contraseña
-            </label>
-            <input type="password" class="form-control" id="InputPassword" />
+            
+            <input 
+            type="password" 
+            class="form-control" 
+            id="InputPassword" 
+            placeholder="Contraseña"/>
           </div>
           <div class="form-group">
-            <label for="InputPasswordCon" className="texto-label">
-              Confirmar Contraseña
-            </label>
-            <input type="password" class="form-control" id="InputPasswordCon" />
+            
+            <input 
+            type="password" 
+            class="form-control" 
+            id="InputPasswordCon"
+            placeholder="Confirmar Contraseña"/>
           </div>
           <Link to="/Login">
-            <Button texto={"Registrarse"} />
+            <Button class="button" texto={"Registrarse"} />
           </Link>
           <Link to="/Login">
-            <Button texto={"Inciar sesión"} />
+            <Button class="button" texto={"Inciar sesión"}/>
           </Link>
         </form>
+      </div>
+      </div>
       </div>
     );
   }

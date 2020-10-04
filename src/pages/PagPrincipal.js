@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "../components/navBar";
+import Navbar from "../components/Nav/navBar";
 import "../styles/styles.css";
 
 class PagPrincipal extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <Navbar />
       </div>
     );
   }

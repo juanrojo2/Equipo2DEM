@@ -35,17 +35,6 @@ const UL = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <UL open={open}>
-      <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0 mt-5" type="submit">
-          Search
-        </button>
-      </form>
       <li></li>
       <li>Nombre de usuario</li>
       <hr />

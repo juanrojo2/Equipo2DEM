@@ -1,6 +1,7 @@
 body {
   font-family: "Secular One", sans-serif;
 }
+
 .title {
   font-family: "Lobster", cursive;
   font-size: 110px;
@@ -10,4 +11,27 @@ body {
   font-family: "Secular One", sans-serif;
   display: block;
   font-size: 30px;
+}
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 25%;
+  padding: 0;
+}
+
+.modal-content {
+  background-color: #3b4652;
+  opacity: 0.85;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+}
+
+h1,
+p {
+  color: black;
+}
+
+button {
+  width: 60%;
+  margin: 5px 0 30px;
 }
