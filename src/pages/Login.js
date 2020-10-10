@@ -33,7 +33,7 @@ class Login extends React.Component {
               <Link to="/PagPrincipal">
                 <Button class="button" texto={"Iniciar sesión"} />
               </Link>
-              
+
               <p id="accountRecovery" className="form-text">
                 ¿Olvidaste tu contraseña?
               </p>
