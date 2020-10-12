@@ -7,7 +7,7 @@ class Login extends React.Component {
   render() {
     return (
       <div class="modal-dialog text-center">
-        <div class="col-sm-8 main-section">
+        <div class="main-section">
           <div class="modal-content">
             <h1>Iniciar sesión</h1>
             <form class="col-12">
