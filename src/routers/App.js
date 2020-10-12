@@ -6,8 +6,8 @@ import singUp from "../pages/singUp";
 import PagPrincipal from "../pages/PagPrincipal";
 import PagNotas from "../pages/PagNotas";
 import PagComentarios from "../pages/PagComentarios";
-import PagBeta from "../pages/PagBeta";
-import { Modal } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/styles.css";
 
 class App extends React.Component {
   render() {
@@ -20,8 +20,6 @@ class App extends React.Component {
           <Route exact path="/PagPrincipal" component={PagPrincipal} />
           <Route exact path="/PagNotas" component={PagNotas} />
           <Route exact path="/PagComentarios" component={PagComentarios} />
-          <Route exact path="/PagBeta" component={PagBeta} />
-          <Route exact path="/modal" component={Modal} />
         </Switch>
       </Router>
     );

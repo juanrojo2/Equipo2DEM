@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.css";
+import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
-export default class ventanamodal extends Component {
+export default class modal extends Component {
   state = {
     abierto: false
   };
@@ -10,20 +9,21 @@ export default class ventanamodal extends Component {
   abrirModal = () => {
     this.setState({ abierto: !this.state.abierto });
   };
+
   render() {
+    const modalStyles = {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%,50%)"
+    };
     return (
       <div>
-        <div className="principal"></div>
-        <div className="secundario"></div>
-        <Button onClick={this.abrirModal}>Mostrar modal</Button>
-
-        <Modal isOpen={this.state.abierto}>
+        <Modal isOpen={this.state.abierto} style={modalStyles}>
           <ModalHeader>Error</ModalHeader>
-
           <ModalBody>Fallo al iniciar sesion</ModalBody>
-
           <ModalFooter>
-            <Button>Aceptar</Button>
+            <button onClick={this.abrirModal}>Aceptar</button>
           </ModalFooter>
         </Modal>
       </div>

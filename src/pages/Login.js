@@ -19,6 +19,7 @@ class Login extends React.Component {
                   id="InputEmail"
                   placeholder="Correo Electronico"
                   aria-describedby="emailHelp"
+                  required="true"
                 />
               </div>
               <div class="form-group">
@@ -28,12 +29,12 @@ class Login extends React.Component {
                   class="form-control"
                   placeholder="Contraseña"
                   id="InputPassword"
+                  required="true"
                 />
               </div>
               <Link to="/PagPrincipal">
                 <Button class="button" texto={"Iniciar sesión"} />
               </Link>
-
               <p id="accountRecovery" className="form-text">
                 ¿Olvidaste tu contraseña?
               </p>
