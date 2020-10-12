@@ -39,3 +39,14 @@ button {
 .container {
   z-index: 10;
 }
+
+.principal {
+  align-items: center;
+  display: flex;
+  height: 110px;
+}
+
+.secundario {
+  margin: 0 auto;
+}
+

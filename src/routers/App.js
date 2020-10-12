@@ -7,6 +7,7 @@ import PagPrincipal from "../pages/PagPrincipal";
 import PagNotas from "../pages/PagNotas";
 import PagComentarios from "../pages/PagComentarios";
 import PagBeta from "../pages/PagBeta";
+import { Modal } from "reactstrap";
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route exact path="/PagNotas" component={PagNotas} />
           <Route exact path="/PagComentarios" component={PagComentarios} />
           <Route exact path="/PagBeta" component={PagBeta} />
+          <Route exact path="/modal" component={Modal} />
         </Switch>
       </Router>
     );
