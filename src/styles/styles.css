@@ -1,7 +1,5 @@
 body {
-
-
-font-family: "Secular One", sans-serif;
+  font-family: "Secular One", sans-serif;
 }
 
 .title {
@@ -31,11 +29,13 @@ font-family: "Secular One", sans-serif;
 h1,
 p {
   color: black;
-  
 }
 
 button {
   width: 60%;
   margin: 5px 0 30px;
   padding: 30px;
+}
+.container {
+  z-index: 10;
 }
