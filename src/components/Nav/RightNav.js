@@ -48,9 +48,9 @@ const RightNav = ({ open }) => {
       <li>
         <a href="/PagComentarios">Tus Comentarios </a>
       </li>
-      <li>
+      {/* <li>
         <a href="/PagCargar">Cargar Libros </a>
-      </li>
+      </li> */}
       <hr />
       <li>
         <a href="/Login">Cerrar Sesión </a>
