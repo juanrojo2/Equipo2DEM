@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const UL = styled.ul`
+  z-index: 200;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;

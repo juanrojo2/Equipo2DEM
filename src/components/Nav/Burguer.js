@@ -4,7 +4,7 @@ import { useState } from "react";
 import RightNav from "./RightNav";
 
 const StyledBurguer = styled.div`
-  z-index: 20;
+  z-index: 300;
   width: 2rem;
   height: 2rem;
   position: fixed;

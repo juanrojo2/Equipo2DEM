@@ -1,9 +1,12 @@
 import React, {Component} from "react";
+import "./books.css";
+import NavComentarios from "./nav";
 
 export default class Alicia extends Component{
   render() {
     return (
       <div>
+        <NavComentarios/>
         <p class="block_">&#160;</p>
         <p class="block_3">I. EN LA MADRIGUERA DEL CONEJO</p>
         <p class="block_">&#160;</p>
