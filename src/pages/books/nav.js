@@ -10,12 +10,6 @@ export default class NavComentarios extends React.Component {
     this.setState({ abierto: !this.state.abierto });
   };
   render() {
-    const modalStyles = {
-      position: "absolute",
-      top: "-33%",
-      left: "50%",
-      transform: "translate(-50%,50%)"
-    };
     return (
       <>
         <nav className="navbar sticky-top navbar-light bg-light">
@@ -28,7 +22,7 @@ export default class NavComentarios extends React.Component {
           </button>
         </nav>
         <div>
-          <Modal isOpen={this.state.abierto} style={modalStyles}>
+          <Modal isOpen={this.state.abierto}>
             <ModalHeader>Crear nota o comentario</ModalHeader>
             <ModalBody>
               <form>
