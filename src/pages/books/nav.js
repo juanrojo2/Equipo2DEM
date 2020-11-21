@@ -3,11 +3,15 @@ import { Modal, ModalHeader, ModalBody } from "reactstrap";
 
 export default class NavComentarios extends React.Component {
   state = {
-    abierto: false
+    abierto1: false,
+    abierto2: false
   };
 
-  abrirModal = () => {
-    this.setState({ abierto: !this.state.abierto });
+  abrirModal1 = () => {
+    this.setState({ abierto1: !this.state.abierto1 });
+  };
+  abrirModal2= () => {
+    this.setState({ abierto2: !this.state.abierto2 });
   };
   render() {
     return (
@@ -16,14 +20,39 @@ export default class NavComentarios extends React.Component {
           <button
             type="button"
             className="btn btn-outline-dark btn-block"
-            onClick={this.abrirModal}
+            onClick={this.abrirModal1}
           >
-            Crear un comentario o nota
+            Nota
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-dark btn-block"
+            onClick={this.abrirModal2}
+          >
+            Comentario
           </button>
         </nav>
         <div>
-          <Modal isOpen={this.state.abierto}>
-            <ModalHeader>Crear nota o comentario</ModalHeader>
+          <Modal isOpen={this.state.abierto1}>
+            <ModalHeader>Crear Nota</ModalHeader>
+            <ModalBody>
+              <form>
+                <div className="form-group">
+                  <label for="note">Nota</label>
+                  <input type="text" className="form-control" id="note" />
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-outline-primary btn-block"
+                  onClick={this.abrirModal1}
+                >
+                  Añadir nota
+                </button>
+              </form>
+            </ModalBody>
+          </Modal>
+          <Modal isOpen={this.state.abierto2}>
+            <ModalHeader>Crear Comentario</ModalHeader>
             <ModalBody>
               <form>
                 <div className="form-group">
@@ -33,20 +62,9 @@ export default class NavComentarios extends React.Component {
                 <button
                   type="button"
                   className="btn btn-outline-primary btn-block"
-                  onClick={this.abrirModal}
+                  onClick={this.abrirModal2}
                 >
                   Añadir comentario
-                </button>
-                <div className="form-group">
-                  <label for="note">Nota</label>
-                  <input type="text" className="form-control" id="note" />
-                </div>
-                <button
-                  type="button"
-                  className="btn btn-outline-primary btn-block"
-                  onClick={this.abrirModal}
-                >
-                  Añadir nota
                 </button>
               </form>
             </ModalBody>
