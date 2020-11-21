@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "../components/Nav/navBar";
 import "../styles/styles.css";
 
-class PagNotas extends React.Component {
-  render() {
+const PagNotas = () => {
     return (
       <div>
         <Navbar />
@@ -21,7 +20,6 @@ class PagNotas extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default PagNotas;

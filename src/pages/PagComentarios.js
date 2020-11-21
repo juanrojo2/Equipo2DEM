@@ -15,8 +15,7 @@ const H1 = styled.h1`
   }
 `;
 
-class PagComentarios extends React.Component {
-  render() {
+const PagComentarios = () => {
     return (
       <div>
         <Navbar />
@@ -34,7 +33,6 @@ class PagComentarios extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default PagComentarios;
