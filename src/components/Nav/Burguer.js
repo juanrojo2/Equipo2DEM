@@ -38,14 +38,14 @@ const StyledBurguer = styled.div`
 const Burguer = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <div>
       <StyledBurguer open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
       </StyledBurguer>
       <RightNav open={open} />
-    </>
+    </div>
   );
 };
 export default Burguer;

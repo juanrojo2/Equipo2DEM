@@ -36,11 +36,12 @@ const UL = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <UL open={open}>
-      <li></li>
-      <li>Nombre de usuario</li>
+      <li>
+        <a href="/PagPrincipal">Libros </a>
+      </li>
       <hr />
       <li>
-        <a href="/PagPrincipal">Tus Libros </a>
+        <a href="/PagLibrosUsuario">Tus Libros </a>
       </li>
       <li>
         <a href="/PagNotas">Tus Notas</a>
@@ -48,9 +49,6 @@ const RightNav = ({ open }) => {
       <li>
         <a href="/PagComentarios">Tus Comentarios </a>
       </li>
-      {/* <li>
-        <a href="/PagCargar">Cargar Libros </a>
-      </li> */}
       <hr />
       <li>
         <a href="/Login">Cerrar Sesión </a>
