@@ -4,18 +4,34 @@ import Axios from "axios";
 import sha1 from "sha1";
 import "../styles/styles.css";
 import Button from "../components/Botones";
+import swal from "sweetalert2";
 
 const Login = () => {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const login = () => {
+  setModal: false;
+
+  const login = (event) => {
+    event.preventDefault();
     Axios.post("https://kuepj-3001.sse.codesandbox.io/api/Login", {
       //Axios.post("http://localhost:3001/api/login", {
       userEmail: userEmail,
       password: sha1(password)
     }).then((response) => {
       console.log(response.data);
+      if (response.data.message === "Usuario no registrado") {
+        swal.fire({
+          title: "Correo y/o contraseña incorrectos",
+          text: "Por favor intenta otra vez",
+          icon: "error",
+          confirmButtonText: "¡Entendido!",
+          //confirmButtonText: "Por favor prueba otra vez",
+          confirmButtonColor: "#f96332"
+        });
+      } else {
+        window.location.href = "/inicio";
+      }
     });
   };
 
