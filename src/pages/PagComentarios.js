@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Nav/navBar";
 import "../styles/styles.css";
 import styled from "styled-components";
-import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import { Modal, ModalBody } from "reactstrap";
 
 const H1 = styled.h1`
   font-family: "Lobster", cursive;

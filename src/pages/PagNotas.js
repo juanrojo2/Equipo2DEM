@@ -2,7 +2,11 @@ import React from "react";
 import Navbar from "../components/Nav/navBar";
 import "../styles/styles.css";
 
+<<<<<<< Codesandbox
+import { Modal, ModalBody } from "reactstrap";
+=======
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
+>>>>>>> GitHub
 
 class PagNotas extends React.Component {
   state = {
