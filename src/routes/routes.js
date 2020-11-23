@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const cors = require("cors");
-
 const mysqlConnection = require("../db/db");
 
-router.post("/SingUp/", (req, res) => {
+router.post("/SingUp", (req, res) => {
   const { name, userEmail, password } = req.body;
   //const abreviatura = req.body.mod
   mysqlConnection.query(
@@ -19,7 +17,7 @@ router.post("/SingUp/", (req, res) => {
   );
 });
 
-router.post("/Login/", (req, res) => {
+router.post("/Login", (req, res) => {
   const { userEmail, password } = req.body;
   //const abreviatura = req.body.mod
   console.log(userEmail, password);
