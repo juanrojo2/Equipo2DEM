@@ -10,7 +10,7 @@ export default class NavComentarios extends React.Component {
   abrirModal1 = () => {
     this.setState({ abierto1: !this.state.abierto1 });
   };
-  abrirModal2= () => {
+  abrirModal2 = () => {
     this.setState({ abierto2: !this.state.abierto2 });
   };
   render() {
