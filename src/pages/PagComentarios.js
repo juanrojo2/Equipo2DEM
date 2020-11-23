@@ -40,7 +40,7 @@ class PagComentarios extends React.Component {
                     <div className="div-btn-com">
                       <button
                         type="button"
-                        className="btn btn-outline-dark btn-block"
+                        className="btn btn-dark btn-block"
                         onClick={this.abrirModal}
                       >
                         Comentario

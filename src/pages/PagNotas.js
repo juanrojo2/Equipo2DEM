@@ -28,7 +28,7 @@ class PagNotas extends React.Component {
                     <div className="div-btn">
                       <button
                         type="button"
-                        className="btn btn-outline-dark btn-block"
+                        className="btn btn-dark btn-block"
                         onClick={this.abrirModal}
                       >
                         Nota
