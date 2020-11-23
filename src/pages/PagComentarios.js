@@ -35,15 +35,16 @@ class PagComentarios extends React.Component {
                 <br />
                 <div className="card">
                   <div className="card-body text-center div-card">
-                    This is some text within a card body.
+                    lorem ipsum dolorem lorem ipsum dolorem lorem ipsum dolorem
+                    lorem ipsum dolorem
                     <hr />
-                    <div className="div-btn-com">
+                    <div className="div-btn">
                       <button
                         type="button"
                         className="btn btn-dark btn-block"
                         onClick={this.abrirModal}
                       >
-                        Comentario
+                        Ver Comentario
                       </button>
                     </div>
                   </div>
@@ -55,23 +56,32 @@ class PagComentarios extends React.Component {
 
         <div>
           <Modal isOpen={this.state.abierto}>
-            <ModalHeader>Crear Comentario</ModalHeader>
             <ModalBody>
               <form>
                 <div className="form-group">
-                  <label for="comment">Comentario</label>
-                  <input type="text" className="form-control" id="comment" />
+                  <h3>Comentario</h3>
+                  <p>
+                    lorem ipsum dolorem lorem ipsum dolorem lorem ipsum dolorem
+                    lorem ipsum dolorem
+                  </p>
                 </div>
                 <button
                   type="button"
                   className="btn btn-outline-primary btn-block"
                   onClick={this.abrirModal}
                 >
-                  Añadir comentario
+                  Editar Comentario
                 </button>
                 <button
                   type="button"
                   className="btn btn-outline-danger btn-block"
+                  onClick={this.abrirModal}
+                >
+                  Eliminar Comentario
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-dark btn-block"
                   onClick={this.abrirModal}
                 >
                   Cerrar
