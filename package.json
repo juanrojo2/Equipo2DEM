@@ -1,5 +1,5 @@
 {
-  "name": "bokla",
+  "name": "bokla-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,5 @@
     ]
   },
   "keywords": [],
-  "description": "Epub reader"
+  "description": ""
 }

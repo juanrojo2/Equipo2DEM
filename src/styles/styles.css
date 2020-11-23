@@ -56,3 +56,25 @@ button {
 .linkSesion:hover {
   color: #000000;
 }
+.div-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.div-btn button {
+  width: 30%;
+}
+.div-btn-com {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.div-btn-com button {
+  width: 50%;
+}
+/* .div-btn button{
+
+} */
+.div-card {
+  background-color: rgba(197, 197, 197, 0.2);
+}
