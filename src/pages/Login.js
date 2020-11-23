@@ -10,31 +10,26 @@ const Login = () => {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  setModal: false;
-
   const login = (event) => {
     event.preventDefault();
-    Axios.post("https://kuepj-3001.sse.codesandbox.io/api/Login", {
-      //Axios.post("http://localhost:3001/api/login", {
+    Axios.post("https://bokla-backend.herokuapp.com/Login", {
       userEmail: userEmail,
       password: sha1(password)
     }).then((response) => {
       console.log(response.data);
-      if (response.data.message === "Usuario no registrado") {
+      if (response.data.message === "Correo y/o contraseña erroneos") {
         swal.fire({
           title: "Correo y/o contraseña incorrectos",
           text: "Por favor intenta otra vez",
           icon: "error",
           confirmButtonText: "¡Entendido!",
-          //confirmButtonText: "Por favor prueba otra vez",
-          confirmButtonColor: "#f96332"
+          confirmButtonColor: "#3282f9"
         });
       } else {
-        window.location.href = "/inicio";
+        console.log("Inicio de sesión correcto");
       }
     });
   };
-
   return (
     <div className="modal-dialog text-center">
       <div className="main-section">
