@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Inicio from "../pages/Inicio";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
+import PagPrincipal from "../pages/PagPrincipal";
 import PagLibrosUsuario from "../pages/PagLibrosUsuario";
 import PagNotas from "../pages/PagNotas";
 import PagComentarios from "../pages/PagComentarios";
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route exact path="/" component={Inicio} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/SignUp" component={SignUp} />
+          <Route exact path="/PagPrincipal" component={PagPrincipal} />
           <Route exact path="/PagLibrosUsuario" component={PagLibrosUsuario} />
           <Route exact path="/PagNotas" component={PagNotas} />
           <Route exact path="/PagComentarios" component={PagComentarios} />
