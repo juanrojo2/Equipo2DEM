@@ -34,6 +34,9 @@ const Login = () => {
             <Link to="/PagPrincipal">
               <Button className="button" texto={"Iniciar sesión"} />
             </Link>
+            <Link to="/SignUp">
+              <Button className="button" texto={"Registrarse"} />
+            </Link>
             <p id="accountRecovery" className="form-text">
               ¿Olvidaste tu contraseña?
             </p>
