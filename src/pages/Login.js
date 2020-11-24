@@ -64,11 +64,13 @@ const Login = () => {
                 }}
               />
             </div>
+            <Link to="/PagPrincipal">
             <Button
               className="button"
               texto={"Iniciar sesión"}
               onClick={login}
             />
+            </Link>
             <Link to="/SignUp">
               <p className="linkSesion">Registrarse</p>
             </Link>
