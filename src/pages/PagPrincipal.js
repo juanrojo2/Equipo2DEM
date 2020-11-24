@@ -2,8 +2,13 @@ import React from "react";
 import Navbar from "../components/Nav/navBar";
 import "../styles/styles.css";
 import Books from "../components/Books";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 const PagPrincipal = () => {
+  // console.log(cookies.get('id'));
+  // console.log(cookies.get('email'));
   return (
     <div className="libros">
       <Navbar />
