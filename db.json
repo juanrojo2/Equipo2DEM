@@ -1,0 +1,31 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Juan",
+      "email": "jjrojoa@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b"
+    }
+  ],
+  "Libros": [
+    {
+      "id": 1,
+      "nombre": "Alicia en el pais de los maravillas",
+      "libro": "Alicia en el país de las maravillas"
+    }
+  ],
+  "Notas": [
+    {
+      "id": 1,
+      "contenido_nota": "Increiblemente bueno",
+      "libro": "Alicia en el país de las maravillas"
+    }
+  ],
+  "Comentarios": [
+    {
+      "id": 1,
+      "contenido_comentario": "Eso fue una sorpresa",
+      "libro": "Alicia en el país de las maravillas"
+    }
+  ]
+}

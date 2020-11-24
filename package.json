@@ -2,28 +2,14 @@
   "name": "bokla-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:dev": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juanrojo2/equipo2_dem_ppi2020.git"
+    "start": "json-server --watch db.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/juanrojo2/equipo2_dem_ppi2020/issues"
-  },
-  "homepage": "https://github.com/juanrojo2/equipo2_dem_ppi2020#readme",
   "dependencies": {
-    "cors": "2.8.5",
-    "express": "^4.17.1",
-    "mysql": "^2.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
+    "json-server": "^0.16.3"
   }
 }
